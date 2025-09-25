@@ -1,6 +1,6 @@
 # Códigos DAW 1
 
-Guardar os códigos das atividades e explicações da disciplina de DAW 1
+Guardar os códigos das atividades e explicações das aulas da disciplina de DAW 1
 
 ```
 codigos-daw-1/
