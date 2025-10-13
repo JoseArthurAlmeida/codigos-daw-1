@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário parte 1/2</title>
+	</head>
+
+	<body>
+		<h1>Formulários - Parte 1/2</h1>
+		<form method="post" action="https://httpbin.dev/post">
+			<fieldset>
+				<legend>Dados do login</legend>
+				<div>
+					<label for="usuario">Usuário:</label>
+					<input type="text" id="usuario" name="user" value="Maria" placeholder="Informe o nome do usuário" required />
+				</div>
+
+				<div>
+					<label for="senha">Senha:</label>
+					<input id="senha" type="password" name="password" placeholder="Informe a senha" required />
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Exemplo checkbox - Quais turnos você prefere estudar?</legend>
+
+				<div>
+					<input type="checkbox" id="turno-estudar-manha" name="turno-estudar-preferencia" value="manha" />
+					<label for="turno-estudar-manha">Manhã</label>
+				</div>
+				<div>
+					<input type="checkbox" id="turno-estudar-tarde" name="turno-estudar-preferencia" value="tarde" />
+					<label for="turno-estudar-tarde">Tarde</label>
+				</div>
+				<div>
+					<input type="checkbox" id="turno-estudar-noite" name="turno-estudar-preferencia" value="noite" />
+					<label for="turno-estudar-noite">Noite</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Exemplo radio - Qual tópico de DAW 1 você prefere?</legend>
+				<div>
+					<input type="radio" name="topico-daw1-preferencia" id="topico-daw1-html" value="html" />
+					<label for="topico-daw1-html">HTML</label>
+				</div>
+				<div>
+					<input type="radio" name="topico-daw1-preferencia" id="topico-daw1-css" value="css" />
+					<label for="topico-daw1-css">CSS</label>
+				</div>
+				<div>
+					<input type="radio" name="topico-daw1-preferencia" id="topico-daw1-javascript" value="javascript" />
+					<label for="topico-daw1-javascript">JavaScript</label>
+				</div>
+			</fieldset>
+			<button type="submit">Enviar</button>
+			<button type="reset">Limpar</button>
+		</form>
+	</body>
+</html>
