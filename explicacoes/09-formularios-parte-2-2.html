@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Parte 2/2</title>
+</head>
+
+<body>
+    <h1>Formulários - Parte 2/2</h1>
+    <form method="post" action="https://httpbin.dev/post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text">
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <textarea id="endereco" name="endereco" type="text"></textarea>
+        </div>
+        <div>
+            <label for="opcao">Escolha uma opção: </label>
+            <select name="opcao" id="opcao" multiple>
+                <option>Selecione...</option>
+                <optgroup label="Menor que 10">
+
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                </optgroup>
+                <optgroup label="Maior que 10">
+
+                    <option>Opção 11</option>
+                    <option>Opção 22</option>
+                    <option>Opção 33</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+
+            <label for="escolha">Escolha um sabor de sorvete:</label>
+            <input list="sugestoes-sabores-sorvete" id="escolha" name="escolha" />
+            <datalist id="sugestoes-sabores-sorvete">
+                <option value="Chocolate"></option>
+                <option value="Côco"></option>
+                <option value="Menta"></option>
+                <option value="Cereja"></option>
+                <option value="Baunilha"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="fuel">Combustivel:</label>
+
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="25">
+            </meter>
+
+        </div>
+
+        <button>Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
